@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ObraSoft — Login</title>
+  <meta name="description" content="ObraSoft — Login" />
+  <!-- Base URL para construir rutas desde JS -->
+  <meta name="base-url" content="/ObraSoft-">
+  <link rel="icon" href="src/assets/img/logo.png" type="image/png" />
+  <link rel="preload" href="src/assets/css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="src/assets/css/styles.css" />
+  </noscript>
+</head>
+
+<body>
+  <main>
+    <section class="login-wrap">
+      <div class="login-card">
+        <div class="brand">
+          <h2>ObraSoft</h2>
+          <p class="subtitle">Control de Obras — Inicia sesión</p>
+        </div>
+        <form id="loginForm" class="login-form" autocomplete="off">
+          <div class="field">
+            <input id="user" name="user" type="text" required autocomplete="username">
+            <label for="user">Usuario</label>
+          </div>
+          <div class="field">
+            <input id="pass" name="pass" type="password" required autocomplete="current-password">
+            <label for="pass">Contraseña</label>
+            <button type="button" class="eye" aria-label="Mostrar contraseña">👁️</button>
+          </div>
+          <div class="actions">
+            <button id="submitBtn" class="btn primary" type="submit">Entrar</button>
+            <button id="ghost" type="button" class="btn ghost">¿Necesitas ayuda?</button>
+          </div>
+        </form>
+        <div class="notice" aria-live="polite">
+
+        </div>
+        <div id="verificationArea" aria-live="polite"></div>
+      </div>
+      <div class="side-deco" aria-hidden="true">
+        <div class="deco-inner" aria-hidden="true">
+          <svg class="deco-illustration" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
+            focusable="false">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#E0BBE4" stop-opacity="0.95" />
+                <stop offset="100%" stop-color="#B5E2FF" stop-opacity="0.85" />
+              </linearGradient>
+              <linearGradient id="g2" x1="0" x2="1">
+                <stop offset="0%" stop-color="#FFD1DC" />
+                <stop offset="100%" stop-color="#FFE5B4" />
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="200" height="200" rx="18" fill="url(#g2)" />
+            <circle cx="50" cy="60" r="34" fill="url(#g1)" opacity="0.95" />
+            <path d="M140 30c18 12 28 36 18 62-10 26-40 36-64 28-24-8-34-36-20-58" fill="#C1E1C1" opacity="0.9" />
+            <g opacity="0.12">
+              <circle cx="150" cy="150" r="40" fill="#FFFFFF" />
+            </g>
+          </svg>
+          <div class="deco-text">
+            <h3>Bienvenido</h3>
+            <p>Gestiona obras, gastos y personal desde un solo lugar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <script src="src/assets/js/login.js"></script>
+</body>
+
+</html>

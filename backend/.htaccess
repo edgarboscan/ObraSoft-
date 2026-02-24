@@ -1,0 +1,4 @@
+# Opcional: redirigir al frontend o proteger rutas
+RewriteEngine On
+# Rewrite example (ajusta según tu entorno)
+# RewriteRule ^api/(.*)$ public/index.php/api/$1 [L,QSA]
