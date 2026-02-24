@@ -105,11 +105,12 @@ $currentPage = $_SERVER['PHP_SELF'] ?? basename(__FILE__);
               <div class="card shadow-sm h-100">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
-                    <span class="material-icons kpi-icon text-muted me-2" aria-hidden="true"
+                    <span class="material-icons kpi-icon kpi-primary me-2" aria-hidden="true"
                       title="Total obras">apartment</span>
                     <h6 class="card-title mb-0">Total obras</h6>
                   </div>
-                  <div id="kpi_total_obras" style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—</div>
+                  <div id="kpi_total_obras" class="kpi-value"
+                    style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—</div>
                 </div>
               </div>
             </div>
@@ -117,11 +118,12 @@ $currentPage = $_SERVER['PHP_SELF'] ?? basename(__FILE__);
               <div class="card shadow-sm h-100">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
-                    <span class="material-icons kpi-icon text-muted me-2" aria-hidden="true"
+                    <span class="material-icons kpi-icon kpi-accent me-2" aria-hidden="true"
                       title="Obras en curso">construction</span>
                     <h6 class="card-title mb-0">En curso</h6>
                   </div>
-                  <div id="kpi_en_curso" style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—</div>
+                  <div id="kpi_en_curso" class="kpi-value" style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—
+                  </div>
                 </div>
               </div>
             </div>
@@ -129,11 +131,12 @@ $currentPage = $_SERVER['PHP_SELF'] ?? basename(__FILE__);
               <div class="card shadow-sm h-100">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
-                    <span class="material-icons kpi-icon text-muted me-2" aria-hidden="true"
+                    <span class="material-icons kpi-icon kpi-success me-2" aria-hidden="true"
                       title="Obreros activos">people</span>
                     <h6 class="card-title mb-0">Obreros activos</h6>
                   </div>
-                  <div id="kpi_obreros" style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—</div>
+                  <div id="kpi_obreros" class="kpi-value" style="font-size:1.4rem;font-weight:700;margin-top:.45rem;">—
+                  </div>
                 </div>
               </div>
             </div>
@@ -141,11 +144,12 @@ $currentPage = $_SERVER['PHP_SELF'] ?? basename(__FILE__);
               <div class="card shadow-sm h-100">
                 <div class="card-body">
                   <div class="d-flex align-items-center">
-                    <span class="material-icons kpi-icon text-muted me-2" aria-hidden="true"
+                    <span class="material-icons kpi-icon kpi-warn me-2" aria-hidden="true"
                       title="Presupuesto">attach_money</span>
                     <h6 class="card-title mb-0">Presupuesto</h6>
                   </div>
-                  <div id="kpi_presupuesto" style="font-size:1.1rem;font-weight:700;margin-top:.45rem;">—</div>
+                  <div id="kpi_presupuesto" class="kpi-value"
+                    style="font-size:1.1rem;font-weight:700;margin-top:.45rem;">—</div>
                 </div>
               </div>
             </div>
